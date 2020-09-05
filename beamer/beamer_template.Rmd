@@ -1,0 +1,49 @@
+---
+title: Title
+subtitle: (Subtitle)
+author: Author
+institute: Afiliation
+titlegraphic: logo.png
+fontsize: 10pt
+output:
+ beamer_presentation:
+    template: ../beamer_template.tex
+    keep_tex: true
+    latex_engine: pdflatex
+    slide_level: 3
+make149: true
+mainfont: "Open Sans" # Try out some font options if xelatex
+titlefont: "Titillium Web" # Try out some font options if xelatex
+---
+
+```{r setup, include=FALSE, cache=F, message=F, warning=F, results="hide"}
+knitr::opts_chunk$set(cache=TRUE)
+knitr::opts_chunk$set(fig.path='figs/')
+knitr::opts_chunk$set(cache.path='cache/')
+
+knitr::opts_chunk$set(
+                  fig.process = function(x) {
+                      x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
+                      if (file.rename(x, x2)) x2 else x
+                      }
+                  )
+library(tidyverse)
+library(stevemisc)
+```
+
+
+# Pop Songs and Political Science
+
+## 12
+
+### Sheena Easton and Game Theory
+
+
+Sheena Easton describes the following scenario for her baby:
+
+1. Takes the morning train
+2. Works from nine 'til five
+3. Takes another train home again
+4. Finds Sheena Easton waiting for him
+
+
