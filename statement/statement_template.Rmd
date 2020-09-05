@@ -4,15 +4,15 @@ output:
     keep_tex: true
     fig_caption: yes
     latex_engine: pdflatex
-    template: ../svm-latex-statement.tex
+    template: ../statement_template.tex
 geometry: margin=1in
 header-includes:
    - \linespread{1.05}
 
 title: "Research Statement"
-author: Steven V. Miller
-affiliation: Department of Political Science, Clemson University
-email: "svmille@clemson.edu"
+author: autor
+affiliation: Instituto, Universidad
+email: "correo"
 
 fontfamily: mathpazo
 fontsize: 11pt
