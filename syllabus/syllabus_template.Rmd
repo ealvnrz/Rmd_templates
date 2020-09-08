@@ -13,6 +13,7 @@ date: "2020/02"
 
 email: "email"
 web: "website"
+webname: "webname"
 officehours: "Horario"
 office: "Oficina"
 classroom: "*online*"

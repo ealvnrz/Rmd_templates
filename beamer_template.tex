@@ -216,7 +216,7 @@ $if(titlegraphic)$\titlegraphic{\includegraphics[width=0.3\paperwidth]{$titlegra
 
 % Some additional title page adjustments.
 %----------------------------------------
-\setbeamertemplate{title page}[empty]
+\setbeamertemplate{title page}[]
 %\date{}
 \setbeamerfont{subtitle}{size=\small}
 
@@ -325,6 +325,14 @@ $if(titlegraphic)$\titlegraphic{\includegraphics[width=0.3\paperwidth]{$titlegra
 
 % Okay, and begin the actual document...
 
+
+
+\usepackage{tikz}
+\usebackgroundtemplate{
+  \tikz[overlay,remember picture] 
+  \node[opacity=0.3, at=(current page.south west),anchor=south west,inner sep=10pt]{
+    \includegraphics[width=1.5cm]{logo}};
+}
 \begin{document}
 $if(title)$
 \frame{\titlepage}
@@ -336,10 +344,10 @@ $include-before$
 $endfor$
 $if(toc)$
 \begin{frame}
-\tableofcontents[hideallsubsections]
-\end{frame}
+\tableofcontents
+\end{frame}$endif$
 
-$endif$
+
 $body$
 
 $if(natbib)$
@@ -368,7 +376,7 @@ $include-after$
 
 $endfor$
 
-\section[]{}
-\frame{\small \frametitle{Table of Contents}
-\tableofcontents}
+%\section[]{}
+%\frame{\small \frametitle{Table of Contents}
+%\tableofcontents}
 \end{document}
