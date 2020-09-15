@@ -12,7 +12,9 @@ output:
     latex_engine: pdflatex
     slide_level: 3
 make149: true
-mainfont: "Open Sans" # Try out some font options if xelatex
+lang: es
+#mainfont: "Open Sans" # Try out some font options if xelatex
+#fontfamily: firasans
 titlefont: "Titillium Web" # Try out some font options if xelatex
 ---
 
