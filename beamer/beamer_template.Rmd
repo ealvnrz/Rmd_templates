@@ -9,6 +9,7 @@ output:
  beamer_presentation:
     template: ./beamer_template.tex
     keep_tex: true
+    toc: false
     latex_engine: pdflatex
     slide_level: 3
 make149: true
