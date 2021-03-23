@@ -4,7 +4,7 @@ output:
     keep_tex: true
     fig_caption: yes
     latex_engine: pdflatex
-    template: ../syllabus_template.tex
+    template: syllabus_template.tex
 geometry: margin=1in
 
 title: "Sigla 000: Curso"

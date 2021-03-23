@@ -7,7 +7,7 @@ titlegraphic: logo.png
 fontsize: 10pt
 output:
  beamer_presentation:
-    template: ./beamer_template.tex
+    template: beamer_template.tex
     keep_tex: true
     toc: false
     latex_engine: pdflatex

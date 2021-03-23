@@ -4,7 +4,7 @@ output:
     keep_tex: true
     fig_caption: yes
     latex_engine: pdflatex
-    template: ../statement_template.tex
+    template: statement_template.tex
 geometry: margin=1in
 header-includes:
    - \linespread{1.05}
